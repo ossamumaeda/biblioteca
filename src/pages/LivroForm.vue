@@ -5,7 +5,6 @@ import { useRoute, useRouter } from "vue-router";
 
 import { libraryStore } from "@/store/libraryStore";
 
-// PrimeVue
 import InputText from "primevue/inputtext";
 import Dropdown from "primevue/dropdown";
 import Textarea from "primevue/textarea";
@@ -28,7 +27,6 @@ const form = reactive({
   sinopsis: "",
 });
 
-// Se for edição → carregar dados
 onMounted(() => {
   if (isEdit.value) {
     const book = libraryStore.getBookById(route.params.id);
@@ -72,14 +70,12 @@ function onImageError(event) {
 
 <template>
   <div class="p-4 md:p-6 max-w-4xl mx-auto">
-    <!-- CARD PRINCIPAL -->
     <div class="bg-white shadow-md rounded-lg p-6 border border-gray-200">
 
       <h2 class="text-2xl font-semibold text-gray-800 mb-6">
         {{ isEdit ? "Editar Livro" : "Cadastrar Novo Livro" }}
       </h2>
 
-      <!-- PREVIEW DA CAPA (apenas edição) -->
       <div v-if="isEdit && form.cover" class="flex justify-center mb-6">
         <img
           :src="form.cover"
@@ -89,10 +85,8 @@ function onImageError(event) {
         />
       </div>
 
-      <!-- FORM -->
       <form @submit.prevent="submitForm" class="grid gap-4">
 
-        <!-- TÍTULO -->
         <div>
           <label class="block text-gray-700 font-medium mb-1">Título</label>
           <InputText
@@ -116,7 +110,6 @@ function onImageError(event) {
           />
         </div>
 
-        <!-- CAPA -->
         <div>
           <label class="block text-gray-700 font-medium mb-1">Foto de Capa (URL)</label>
           <InputText
@@ -126,7 +119,6 @@ function onImageError(event) {
           />
         </div>
 
-        <!-- AUTOR -->
         <div>
           <label class="block text-gray-700 font-medium mb-1">Autor</label>
           <Dropdown
@@ -139,7 +131,6 @@ function onImageError(event) {
           />
         </div>
 
-        <!-- EDITORA -->
         <div>
           <label class="block text-gray-700 font-medium mb-1">Editora</label>
           <Dropdown
@@ -152,7 +143,6 @@ function onImageError(event) {
           />
         </div>
 
-        <!-- SINOPSE -->
         <div>
           <label class="block text-gray-700 font-medium mb-1">Sinopse</label>
           <Textarea
@@ -163,7 +153,6 @@ function onImageError(event) {
           />
         </div>
 
-        <!-- BOTÕES -->
         <div class="flex gap-3 justify-end pt-4">
           <Button label="Cancelar" severity="secondary" @click="router.back()" />
           <Button label="Salvar" severity="primary" type="submit"/>
@@ -176,5 +165,4 @@ function onImageError(event) {
 
 
 <style scoped>
-/* mantém o estilo consistente com /livros */
 </style>

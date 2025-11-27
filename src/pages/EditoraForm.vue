@@ -62,7 +62,6 @@ function onImageError(event) {
     </h1>
 
     <form class="bg-white shadow-md p-6 rounded space-y-4" @submit.prevent="save">
-      <!-- Nome -->
       <div>
         <label class="font-medium">Nome da Editora</label>
         <input
@@ -74,7 +73,6 @@ function onImageError(event) {
         <p v-if="errors.name" class="text-red-600 text-sm">{{ errors.name }}</p>
       </div>
 
-      <!-- Buttons -->
       <div class="flex justify-between mt-6">
         <button
           type="button"

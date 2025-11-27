@@ -33,7 +33,6 @@ function onImageError(event) {
 
 <template>
   <div class="p-4 max-w-4xl mx-auto">
-    <!-- Header -->
     <div class="flex justify-between items-center mb-6">
       <h1 class="text-2xl font-bold text-slate-800">
         Autor: {{ author?.name || "Autor não encontrado" }}
@@ -55,14 +54,12 @@ function onImageError(event) {
       </div>
     </div>
 
-    <!-- Author data -->
     <div class="bg-white p-5 shadow rounded">
       <p><strong>ID:</strong> {{ author?.id }}</p>
       <p><strong>Nome:</strong> {{ author?.name }}</p>
       <p><strong>Ano de Nascimento:</strong> {{ author?.birthYear }}</p>
     </div>
 
-    <!-- Books -->
     <h2 class="text-xl font-semibold mt-8 mb-3">Livros do Autor</h2>
 
     <div v-if="books.length > 0" class="grid md:grid-cols-2 gap-4">

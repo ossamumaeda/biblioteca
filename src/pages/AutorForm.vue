@@ -5,21 +5,17 @@ import { ref, computed, onMounted } from "vue";
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 
-// Router
 const route = useRoute();
 const router = useRouter();
 
-// Mode
 const isNew = route.params.id === "novo";
 const authorId = isNew ? null : Number(route.params.id);
 
-// Default form data
 const formData = ref({
   name: "",
   birthYear: "",
 });
 
-// If editing → load data
 onMounted(() => {
   if (!isNew) {
     const author = libraryStore.getAuthorById(authorId);
@@ -32,7 +28,6 @@ onMounted(() => {
   }
 });
 
-// Validation schema
 const schema = yup.object({
   name: yup.string().required("Nome é obrigatório").min(2, "Muito curto"),
   birthYear: yup
@@ -42,7 +37,6 @@ const schema = yup.object({
     .max(new Date().getFullYear(), "Ano inválido"),
 });
 
-// Submit
 function handleSubmit(values) {
   if (isNew) {
     const newId = libraryStore.getNextAuthorId();
@@ -60,15 +54,12 @@ function handleSubmit(values) {
 
 <template>
   <div class="p-6 max-w-2xl mx-auto bg-white shadow rounded-lg mt-6">
-    <!-- Title -->
     <h1 class="text-2xl font-bold mb-6 text-gray-800">
       {{ isNew ? "Cadastrar Autor" : "Editar Autor" }}
     </h1>
 
-    <!-- Form -->
     <Form :validation-schema="schema" @submit="handleSubmit">
       <div class="space-y-4">
-        <!-- Name -->
         <div>
           <label class="block text-sm font-semibold mb-1">Nome</label>
           <Field
@@ -80,7 +71,6 @@ function handleSubmit(values) {
           <ErrorMessage name="name" class="text-red-500 text-sm" />
         </div>
 
-        <!-- birthYear -->
         <div>
           <label class="block text-sm font-semibold mb-1">Ano de Nascimento</label>
           <Field
@@ -93,7 +83,6 @@ function handleSubmit(values) {
           <ErrorMessage name="birthYear" class="text-red-500 text-sm" />
         </div>
 
-        <!-- Buttons -->
         <div class="flex justify-between pt-4">
           <button
             type="button"

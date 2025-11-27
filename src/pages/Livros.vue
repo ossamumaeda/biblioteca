@@ -154,16 +154,12 @@ const fallbackImage =
 function onImageError(event) {
   event.target.src = fallbackImage;
 }
-
 </script>
 
 <template>
   <div class="p-4 md:p-6 space-y-6">
-    <!-- Title + New -->
     <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3">
-      <h1 class="text-xl md:text-2xl font-bold text-center md:text-left">
-        Biblioteca
-      </h1>
+      <h1 class="text-xl md:text-2xl font-bold text-center md:text-left">Biblioteca</h1>
       <div class="flex gap-2 mt-4">
         <Button
           label="Novo Livro"
@@ -187,7 +183,6 @@ function onImageError(event) {
       </div>
     </div>
 
-    <!-- Filters -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div>
         <label class="text-sm font-semibold">Título</label>
@@ -209,7 +204,6 @@ function onImageError(event) {
       </div>
     </div>
 
-    <!-- Sorting controls -->
     <div class="flex flex-col md:flex-row md:items-center gap-4">
       <Dropdown
         v-model="sortField"
@@ -300,7 +294,6 @@ function onImageError(event) {
       </table>
     </div>
 
-    <!-- MOBILE CARD LIST -->
     <div class="md:hidden space-y-4">
       <div
         v-for="book in filteredBooks"
@@ -347,7 +340,6 @@ function onImageError(event) {
       </p>
     </div>
 
-    <!-- Modal -->
     <Dialog
       v-model:visible="showModal"
       modal
@@ -382,13 +374,5 @@ function onImageError(event) {
 </template>
 
 <style scoped>
-table th,
-table td {
-  border-right: 1px solid #eee;
-}
-
-table th:last-child,
-table td:last-child {
-  border-right: none;
-}
+@import "@/styles/livros.css";
 </style>

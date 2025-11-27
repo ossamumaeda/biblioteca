@@ -36,7 +36,6 @@ function onImageError(event) {
 
 <template>
   <div class="max-w-3xl mx-auto p-6">
-    <!-- Header -->
     <div class="flex items-center justify-between mb-4">
       <h1 class="text-2xl font-bold">Editora: {{ publisher.name }}</h1>
 
@@ -57,13 +56,11 @@ function onImageError(event) {
       </div>
     </div>
 
-    <!-- Info Básica -->
     <div class="bg-white shadow rounded p-4 mb-6">
       <p><strong>ID:</strong> {{ publisher.id }}</p>
       <p><strong>Nome:</strong> {{ publisher.name }}</p>
     </div>
 
-    <!-- Livros da Editora -->
     <div class="bg-white shadow rounded p-4">
       <h2 class="text-lg font-semibold mb-3">Livros desta Editora</h2>
 
