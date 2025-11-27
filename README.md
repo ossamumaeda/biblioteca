@@ -25,6 +25,7 @@ Esta avaliação tem como objetivo avaliar a capacidade técnica em tecnologias 
 - Respeitar as rotas indicadas em cada item
 
 #### #1) Listagem de Livros `/livros`
+<img width="587" height="831" alt="livros" src="https://github.com/user-attachments/assets/6693eb68-7606-4276-9454-f0f3c9f7fdf6" />
 
   - Criar uma página que irá listar os livros, mostrando o id, a foto de capa, título, ano de publicação, nome do autor e nome da editora
   - Criar botões de redirecionamento para o `Formulário do Livro #2`, `Página do Autor #3` e `Página da Editora #4`
@@ -34,6 +35,7 @@ Esta avaliação tem como objetivo avaliar a capacidade técnica em tecnologias 
   - Ao clicar em um livro, abrir uma modal exibindo a foto em uma resolução maior, título, autor, editora, ano de publicação e sinopse do livro.
 
 #### #2) Formulário de Livro `/livros/:id(novo|[0-9]+)`
+<img width="587" height="831" alt="livros-editar" src="https://github.com/user-attachments/assets/cf7d77d8-31bb-4ed1-8e9a-56f81a06b8ef" />
 
   - Criar uma página com um formulário contendo os campos do livro, com a possibilidade de `criação` e `edição` de um livro.
   - Deve conter os campos: `Título`, `Ano de Publicação`, `Foto de Capa`, `Autor` (um dropdown que listará os autores já existentes), `Editora` (um dropdown que listará as editoras já existentes), `Sinopse`
@@ -43,11 +45,13 @@ Esta avaliação tem como objetivo avaliar a capacidade técnica em tecnologias 
   - `Todos os campos são obrigatórios`
 
 #### #3) Página do Autor `/autores/:id`
+<img width="587" height="831" alt="autor" src="https://github.com/user-attachments/assets/20920d73-bc36-4eb8-8e47-0b56a8d3a30e" />
 
  - Criar uma página que contenha os dados do Autor: `id`, `nome` e uma listagem dos livros desse autor.
  - Criar um botão de redirecionamento para o `Formulário de Autor #4`
 
 #### #4) Formulário de Autor `/autores/:id(novo|[0-9]+)`
+<img width="579" height="343" alt="autor-editar" src="https://github.com/user-attachments/assets/261c07f7-4529-4a46-ab44-78073104edbc" />
 
   - Criar uma página com um formulário contendo os campos do autor, com a possibilidade de `criação` e `edição` de um autor.
   - Gerar o id dinâmicamente e salvar o registro no state.
@@ -55,11 +59,13 @@ Esta avaliação tem como objetivo avaliar a capacidade técnica em tecnologias 
   - `Todos os campos são obrigatórios`
 
 #### #5) Página da Editora `/editoras/:id`
-
+<img width="578" height="819" alt="editora" src="https://github.com/user-attachments/assets/d1e8d082-b8bb-4b2f-8d05-b5783b56bca9" />
  - Criar uma página que contenha os dados da editora: `id`, `nome` e uma listagem dos livros publicados dessa editora.
  - Criar um botão de redirecionamento para o `Formulário da Editora #6`
 
 #### #6) Formulário de Editora `/editoras/:id(novo|[0-9]+)`
+<img width="587" height="230" alt="editora-editar" src="https://github.com/user-attachments/assets/916284f5-d66c-4f0e-b556-9a98bed6ea39" />
+
 
   - Criar uma página com um formulário contendo os campos da editora, com a possibilidade de `criação` e `edição` de uma editora.
   - Gerar o id dinâmicamente e salvar o registro no state
