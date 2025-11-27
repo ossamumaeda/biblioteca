@@ -1,5 +1,6 @@
 # Avaliação Front-End (Vue/Prime)
-
+## NOTAS-GABRIEL 
+Tive alguns erros ao iniciar o projeto com as configurações pré definidas do arquivo package.json. Em especifico, a extensão vue-router estava como uma versão incompativel à versão do vue 3.4.^, assim, foi necessário alterar a versão para: "vue-router": "4.2.5".
 ## Objetivo
 Esta avaliação tem como objetivo avaliar a capacidade técnica em tecnologias utilizadas para desenvolvimento front-end.
 
