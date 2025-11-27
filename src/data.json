@@ -1,0 +1,319 @@
+{
+    "authors": [
+        {
+            "id": 1,
+            "name": "J.R.R. Tolkien",
+            "birthYear": 1892
+        },
+        {
+            "id": 2,
+            "name": "George Orwell",
+            "birthYear": 1903
+        },
+        {
+            "id": 3,
+            "name": "Miguel de Cervantes",
+            "birthYear": 1547
+        },
+        {
+            "id": 4,
+            "name": "Herman Melville",
+            "birthYear": 1819
+        },
+        {
+            "id": 5,
+            "name": "F. Scott Fitzgerald",
+            "birthYear": 1896
+        },
+        {
+            "id": 6,
+            "name": "Gabriel García Márquez",
+            "birthYear": 1927
+        },
+        {
+            "id": 7,
+            "name": "Jane Austen",
+            "birthYear": 1775
+        },
+        {
+            "id": 8,
+            "name": "Fiódor Dostoiévski",
+            "birthYear": 1821
+        },
+        {
+            "id": 9,
+            "name": "Emily Brontë",
+            "birthYear": 1818
+        },
+        {
+            "id": 10,
+            "name": "J.D. Salinger",
+            "birthYear": 1919
+        },
+        {
+            "id": 11,
+            "name": "Mark Twain",
+            "birthYear": 1835
+        },
+        {
+            "id": 12,
+            "name": "Virginia Woolf",
+            "birthYear": 1882
+        },
+        {
+            "id": 13,
+            "name": "Leo Tolstoy",
+            "birthYear": 1828
+        },
+        {
+            "id": 14,
+            "name": "Charles Dickens",
+            "birthYear": 1812
+        },
+        {
+            "id": 15,
+            "name": "H.G. Wells",
+            "birthYear": 1866
+        }
+    ],
+    "publishers": [
+        {
+            "id": 1,
+            "name": "HarperCollins"
+        },
+        {
+            "id": 2,
+            "name": "Penguin Random House"
+        },
+        {
+            "id": 3,
+            "name": "L&PM Editores"
+        },
+        {
+            "id": 4,
+            "name": "Companhia das Letras"
+        },
+        {
+            "id": 5,
+            "name": "Rocco"
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "title": "O Senhor dos Anéis",
+            "authorId": 1,
+            "publisherId": 2,
+            "year": 1954,
+            "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPcT9lM_JNIamrJ38Ew92BmnaCTQdx1tiPB9sS7anbxdeaUfer23Uyy15MqTE4O3xsKv8&usqp=CAU",
+            "sinopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 2,
+            "title": "1984",
+            "authorId": 2,
+            "publisherId": 1,
+            "year": 1949,
+            "cover": "data:image/webp;base64,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",
+            "sinopsis": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "id": 3,
+            "title": "Dom Quixote",
+            "authorId": 3,
+            "publisherId": 4,
+            "year": 1605,
+            "cover": "https://m.media-amazon.com/images/I/81pdXbEIZhL._UF894,1000_QL80_.jpg",
+            "sinopsis": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": 4,
+            "title": "Moby Dick",
+            "authorId": 4,
+            "publisherId": 3,
+            "year": 1851,
+            "cover": "https://m.media-amazon.com/images/I/712mdW4zCcL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "id": 5,
+            "title": "O Grande Gatsby",
+            "authorId": 5,
+            "publisherId": 2,
+            "year": 1925,
+            "cover": "https://m.media-amazon.com/images/I/81Ph4QRq1gL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "id": 6,
+            "title": "Cem Anos de Solidão",
+            "authorId": 6,
+            "publisherId": 4,
+            "year": 1967,
+            "cover": "https://m.media-amazon.com/images/I/816Yy5v+S5L._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Curabitur pretium tincidunt lacus, ut laoreet sapien blandit a."
+        },
+        {
+            "id": 7,
+            "title": "Orgulho e Preconceito",
+            "authorId": 7,
+            "publisherId": 5,
+            "year": 1813,
+            "cover": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/84/14/20028635.jpg",
+            "sinopsis": "Integer in libero sed arcu bibendum imperdiet."
+        },
+        {
+            "id": 8,
+            "title": "Crime e Castigo",
+            "authorId": 8,
+            "publisherId": 3,
+            "year": 1866,
+            "cover": "https://m.media-amazon.com/images/I/916WkSH4cGL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Praesent at sodales nunc. Morbi ac nisi mauris."
+        },
+        {
+            "id": 9,
+            "title": "O Morro dos Ventos Uivantes",
+            "authorId": 9,
+            "publisherId": 5,
+            "year": 1847,
+            "cover": "https://www.martinclaret.com.br/wp-content/uploads/2017/04/51gJvdYl-9L.jpg",
+            "sinopsis": "Sed vitae justo condimentum, sagittis sem ut, pellentesque lectus."
+        },
+        {
+            "id": 10,
+            "title": "O Apanhador no Campo de Centeio",
+            "authorId": 10,
+            "publisherId": 1,
+            "year": 1951,
+            "cover": "https://estadodaarte.estadao.com.br/wp-content/uploads/2019/06/apanhador-no-campo-de-centeio-todavia-e1561326283902.jpg",
+            "sinopsis": "Aliquam erat volutpat. Nulla facilisi."
+        },
+        {
+            "id": 11,
+            "title": "As Aventuras de Tom Sawyer",
+            "authorId": 11,
+            "publisherId": 2,
+            "year": 1876,
+            "cover": "https://m.media-amazon.com/images/I/91XQHxOU1RS._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Fusce interdum magna nec lorem malesuada, vel fermentum urna feugiat."
+        },
+        {
+            "id": 12,
+            "title": "Mrs. Dalloway",
+            "authorId": 12,
+            "publisherId": 4,
+            "year": 1925,
+            "cover": "https://m.media-amazon.com/images/I/91OZZN8uEOL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+        },
+        {
+            "id": 13,
+            "title": "Guerra e Paz",
+            "authorId": 13,
+            "publisherId": 3,
+            "year": 1869,
+            "cover": "https://m.media-amazon.com/images/I/814J+usGFjL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Quisque at est vitae nulla tincidunt gravida."
+        },
+        {
+            "id": 14,
+            "title": "Oliver Twist",
+            "authorId": 14,
+            "publisherId": 5,
+            "year": 1837,
+            "cover": "https://m.media-amazon.com/images/I/71+y2vNHwpL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "In hac habitasse platea dictumst. Sed in libero vitae nisl blandit tincidunt."
+        },
+        {
+            "id": 15,
+            "title": "A Máquina do Tempo",
+            "authorId": 15,
+            "publisherId": 1,
+            "year": 1895,
+            "cover": "https://m.media-amazon.com/images/I/91XAnKe28UL._AC_UF350,350_QL50_.jpg",
+            "sinopsis": "Etiam vehicula neque nec tellus fermentum, at interdum nulla pretium."
+        },
+        {
+            "id": 16,
+            "title": "O Hobbit",
+            "authorId": 1,
+            "publisherId": 2,
+            "year": 1937,
+            "cover": "https://m.media-amazon.com/images/I/81arD48HpRL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Nam ultricies nisi ut aliquet tristique. Sed suscipit lorem in augue convallis aliquet."
+        },
+        {
+            "id": 17,
+            "title": "Revolução dos Bichos",
+            "authorId": 2,
+            "publisherId": 1,
+            "year": 1945,
+            "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpaMF2j1ylfm2TQ6pLrNcb1-ulhh1xlYLBRw&s",
+            "sinopsis": "Integer sollicitudin magna ut metus gravida tincidunt."
+        },
+        {
+            "id": 19,
+            "title": "A História de duas Cidades",
+            "authorId": 14,
+            "publisherId": 3,
+            "year": 1859,
+            "cover": "https://img.travessa.com.br/livro/BA/20/20222710-a8bb-437b-b875-3ef8b49924c6.jpg",
+            "sinopsis": "Morbi malesuada purus at velit tincidunt, non scelerisque nunc viverra."
+        },
+        {
+            "id": 20,
+            "title": "O Último dos Moicanos",
+            "authorId": 11,
+            "publisherId": 2,
+            "year": 1826,
+            "cover": "https://example.com/capa20.jpg",
+            "sinopsis": "Praesent bibendum massa sed magna gravida, id tincidunt dui convallis."
+        },
+        {
+            "id": 21,
+            "title": "To the Lighthouse",
+            "authorId": 12,
+            "publisherId": 4,
+            "year": 1927,
+            "cover": "https://upload.wikimedia.org/wikipedia/pt/d/d0/ToTheLighthouseCapa.jpg",
+            "sinopsis": "Nullam auctor justo nec sem ultrices, sed luctus elit tincidunt."
+        },
+        {
+            "id": 22,
+            "title": "Anna Karenina",
+            "authorId": 13,
+            "publisherId": 3,
+            "year": 1877,
+            "cover": "https://m.media-amazon.com/images/I/71gDUJXkiuL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Donec malesuada nisi vitae nulla bibendum, sit amet tincidunt ligula volutpat."
+        },
+        {
+            "id": 30,
+            "title": "O Casamento de Figaro",
+            "authorId": 15,
+            "publisherId": 5,
+            "year": 1784,
+            "cover": "https://example.com/capa23.jpg",
+            "sinopsis": "Phasellus posuere nunc sit amet neque vehicula, vitae fringilla lectus hendrerit."
+        },
+        {
+            "id": 24,
+            "title": "As Crônicas de Nárnia",
+            "authorId": 1,
+            "publisherId": 2,
+            "year": 1950,
+            "cover": "https://m.media-amazon.com/images/I/71yJLhQekBL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Fusce tincidunt justo vitae odio finibus, et condimentum odio tincidunt."
+        },
+        {
+            "id": 25,
+            "title": "O Lobo da Estepe",
+            "authorId": 8,
+            "publisherId": 1,
+            "year": 1927,
+            "cover": "https://m.media-amazon.com/images/I/81D3K4ck5CL._AC_UF1000,1000_QL80_.jpg",
+            "sinopsis": "Sed vitae justo eget diam vestibulum vehicula."
+        }
+    ]
+}
